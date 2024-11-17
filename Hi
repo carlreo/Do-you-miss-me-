@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Miss You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .message-box {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            text-align: center;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .yes {
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+        .no {
+            background-color: #f44336; /* Red */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="message-box">
+    <h2>I miss you!</h2>
+    <p>Do you miss me too?</p>
+    <button class="yes" onclick="handleResponse('yes')">Yes</button>
+    <button class="no" onclick="handleResponse('no')">No</button>
+</div>
+
+<script>
+    function handleResponse(response) {
+        if (response === 'yes') {
+            alert("Yay! I miss you too!");
+        } else {
+            alert("That's okay, maybe another time!");
+        }
+    }
+</script>
+
+</body>
+</html>
